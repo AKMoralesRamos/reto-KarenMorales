@@ -1,50 +1,62 @@
 {
   "hash": "b32c347c",
-  "browserHash": "706557f5",
+  "browserHash": "920f50b4",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "66565e9d",
+      "fileHash": "687090ea",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "a6612beb",
+      "fileHash": "e60c49c0",
       "needsInterop": true
     },
     "bootstrap/dist/js/bootstrap.bundle.min": {
       "src": "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
       "file": "bootstrap_dist_js_bootstrap__bundle__min.js",
-      "fileHash": "78b7ed70",
+      "fileHash": "904f2894",
       "needsInterop": true
     },
     "react-bootstrap/Button": {
       "src": "../../node_modules/react-bootstrap/esm/Button.js",
       "file": "react-bootstrap_Button.js",
-      "fileHash": "5c0a08d4",
+      "fileHash": "ade2a194",
       "needsInterop": false
     },
     "react-bootstrap/Form": {
       "src": "../../node_modules/react-bootstrap/esm/Form.js",
       "file": "react-bootstrap_Form.js",
-      "fileHash": "9f249d00",
+      "fileHash": "97bf5122",
       "needsInterop": false
     },
     "react-bootstrap/InputGroup": {
       "src": "../../node_modules/react-bootstrap/esm/InputGroup.js",
       "file": "react-bootstrap_InputGroup.js",
-      "fileHash": "232af753",
+      "fileHash": "7b0b62d0",
+      "needsInterop": false
+    },
+    "react-bootstrap/Modal": {
+      "src": "../../node_modules/react-bootstrap/esm/Modal.js",
+      "file": "react-bootstrap_Modal.js",
+      "fileHash": "7fee6522",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-5QQGJ7P2": {
-      "file": "chunk-5QQGJ7P2.js"
+    "chunk-O63ZRILJ": {
+      "file": "chunk-O63ZRILJ.js"
     },
-    "chunk-CM6AZARW": {
-      "file": "chunk-CM6AZARW.js"
+    "chunk-4ASWBRZ3": {
+      "file": "chunk-4ASWBRZ3.js"
+    },
+    "chunk-24R3ZYGJ": {
+      "file": "chunk-24R3ZYGJ.js"
+    },
+    "chunk-UB7YVI27": {
+      "file": "chunk-UB7YVI27.js"
     },
     "chunk-O6O4HUXW": {
       "file": "chunk-O6O4HUXW.js"
