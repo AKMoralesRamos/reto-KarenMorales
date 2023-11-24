@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import "./App.css";
+import ResultModal from "./components/result";
 import { calculatorTotal } from "./components/calculatorTotal";
 
 class App extends React.Component {
@@ -21,10 +22,14 @@ class App extends React.Component {
     if (!isNaN(inputValue)) {
       console.log(inputValue);
       const result = calculatorTotal(inputValue);
-      this.setState({ result, errorMessage: null });
+      this.setState({ result, errorMessage: null, showModal: true, handleCloseModal: true });
     } else {
       this.setState({ errorMessage: "Por favor, ingresa un número válido.", result: null });
     }
+  };
+
+  handleCloseModal = () => {
+    this.setState({ showModal: false });
   };
 
   render() {
@@ -52,7 +57,11 @@ class App extends React.Component {
             <p style={{ color: "red" }}>{this.state.errorMessage}</p>
           )}
           {this.state.result !== null && (
-            <p>El resultado es: {this.state.result}</p>
+            <ResultModal
+              result={this.state.result}
+              show={this.state.showModal}
+              handleClose={this.handleCloseModal}
+            />
           )}
         </div>
       </div>

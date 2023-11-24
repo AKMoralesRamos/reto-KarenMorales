@@ -980,13 +980,20 @@ function useBootstrapMinBreakpoint() {
   } = (0, import_react.useContext)(ThemeContext);
   return minBreakpoint;
 }
+function useIsRTL() {
+  const {
+    dir
+  } = (0, import_react.useContext)(ThemeContext);
+  return dir === "rtl";
+}
 
 export {
   require_classnames,
   require_jsx_runtime,
   useBootstrapPrefix,
   useBootstrapBreakpoints,
-  useBootstrapMinBreakpoint
+  useBootstrapMinBreakpoint,
+  useIsRTL
 };
 /*! Bundled license information:
 
@@ -1008,4 +1015,4 @@ react/cjs/react-jsx-runtime.development.js:
    * LICENSE file in the root directory of this source tree.
    *)
 */
-//# sourceMappingURL=chunk-CM6AZARW.js.map
+//# sourceMappingURL=chunk-UB7YVI27.js.map
