@@ -1,4 +1,3 @@
-
 export const findPrimeNumber = (numberValue) => {
   const isPrime = (num) => {
     for (let i = 2; i <= Math.sqrt(num); i++) {
@@ -14,9 +13,14 @@ export const findPrimeNumber = (numberValue) => {
     if (isPrime(currentPosition)) foundPrimes++;
     currentPosition++;
   }
-
   return currentPosition - 1;
 };
+
+export const findTriangularNumber = (numberValue) => {
+    const newNumber = numberValue - 2;
+    const result = newNumber*(newNumber + 1 ) / 2
+    return result;
+    }
 
 export const findFibonacciNumber = (numberValue) => {
   let a = 0;
@@ -28,4 +32,3 @@ export const findFibonacciNumber = (numberValue) => {
   }
   return b;
 };
-
