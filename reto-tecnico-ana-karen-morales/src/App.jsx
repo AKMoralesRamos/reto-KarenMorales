@@ -5,6 +5,8 @@ import InputGroup from "react-bootstrap/InputGroup";
 import "./App.css";
 import ResultModal from "./components/result";
 import { calculatorTotal } from "./components/calculatorTotal";
+/* import MiComponente from "./components/image"; */
+/* import image from "../public/serieN.JPG"; */
 
 class App extends React.Component {
   constructor(props) {
@@ -22,9 +24,17 @@ class App extends React.Component {
     if (!isNaN(inputValue)) {
       console.log(inputValue);
       const result = calculatorTotal(inputValue);
-      this.setState({ result, errorMessage: null, showModal: true, handleCloseModal: true });
+      this.setState({
+        result,
+        errorMessage: null,
+        showModal: true,
+        handleCloseModal: true,
+      });
     } else {
-      this.setState({ errorMessage: "Por favor, ingresa un número válido.", result: null });
+      this.setState({
+        errorMessage: "Por favor, ingresa un número válido.",
+        result: null,
+      });
     }
   };
 
@@ -36,6 +46,10 @@ class App extends React.Component {
     return (
       <div>
         <h1>Calculadora de serie</h1>
+      {/*   <div>
+          <MiComponente></MiComponente>
+        </div> */}
+        <h4>Instrucciones:</h4>
         <p>Introduce un valor para n y haz clic en Calcular.</p>
         <div>
           <InputGroup className="mb-3">
@@ -70,4 +84,3 @@ class App extends React.Component {
 }
 
 export default App;
-

@@ -12,7 +12,7 @@ class ResultModal extends React.Component {
           <Modal.Title>Resultado</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>El resultado es: {result}</p>
+          <p>El valor de la posición de "n" en la serie es: {result}</p>
         </Modal.Body>
       </Modal>
     );
