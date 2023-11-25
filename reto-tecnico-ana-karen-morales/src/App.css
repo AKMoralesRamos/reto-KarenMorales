@@ -3,6 +3,31 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  position: relative;
+}
+.main {
+  position: relative;
+}
+.container {
+  width: 400px;
+  height: 200px;
+  padding: 0;
+  margin: 0;
 }
 
+.serie-image {
+  width: 110%;
+  height: 50%;
+  position: absolute;
+  background-image: url("../public/serieToN.JPG"); /* Reemplaza con la ruta de tu imagen */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+@media screen and (max-width: 480px) {
+  .container {
+    width: 200px;
+    height: 100px;
+  }
+}
