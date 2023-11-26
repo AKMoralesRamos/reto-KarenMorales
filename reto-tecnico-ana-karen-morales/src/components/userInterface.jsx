@@ -2,14 +2,20 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-/* import "./App.css" */
 
 function UserInterface({ onNumberValue }) {
   const [numberValue, setNumberValue] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleCalculate = () => {
-    onNumberValue(parseInt(numberValue, 10));
-    setNumberValue("");
+    const parsedNumber = parseInt(numberValue, 10);
+    if (isNaN(parsedNumber) || parsedNumber <= 0 || numberValue.trim() === "") {
+      setErrorMessage("Introduce un número mayor a 0");
+    } else {
+      onNumberValue(parseInt(parsedNumber, 10));
+      setNumberValue("");
+      setErrorMessage("");
+    }
   };
 
   return (
@@ -32,6 +38,7 @@ function UserInterface({ onNumberValue }) {
             Calcular
           </Button>
         </InputGroup>
+        {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
       </div>
     </div>
   );
