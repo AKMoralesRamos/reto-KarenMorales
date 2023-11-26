@@ -17,10 +17,10 @@ export const findPrimeNumber = (numberValue) => {
 };
 
 export const findTriangularNumber = (numberValue) => {
-    const newNumber = numberValue - 2;
-    const result = (newNumber*(newNumber + 1 )) / 2
-    return result;
-    }
+  const newNumber = numberValue - 2;
+  const result = (newNumber * (newNumber + 1)) / 2;
+  return result;
+};
 
 export const findFibonacciNumber = (numberValue) => {
   let a = 0;

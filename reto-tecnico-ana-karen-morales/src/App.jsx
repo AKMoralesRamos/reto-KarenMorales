@@ -11,7 +11,6 @@ function App() {
 
   const handleCalculate = (numberValue) => {
     const result = CalculatorTotal.calculatorFromN(numberValue);
-    console.log(result);
     setCalculatedResult(result);
     setShowModal(true);
     setNumberValue(numberValue);
