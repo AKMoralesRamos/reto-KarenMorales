@@ -19,7 +19,7 @@
   width: 110%;
   height: 50%;
   position: absolute;
-  background-image: url("../public/serieToN.JPG"); /* Reemplaza con la ruta de tu imagen */
+  background-image: url("/serieToN.JPG");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
