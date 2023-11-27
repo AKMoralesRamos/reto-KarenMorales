@@ -82,7 +82,7 @@ Así mismo hay un caso de prueba para cada función realizada.
 
 ## 6.3 Despliegue
 
-Antes de desplegar la aplicación, es necesario construir los archivos necesarios. Ejecuta el siguiente comando **npm run build**. 
+Antes de desplegar la aplicación, es necesario construir los archivos necesarios. Ejecuta el siguiente comando **npm build**. 
 En este caso la aplicación fue desplegada con vercel.
 
 
