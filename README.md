@@ -79,3 +79,10 @@ Para ejecutar la aplicación, sigue estos pasos:
 Para ejecutar las pruebas unitarias, utiliza el comando **npm test**.
 Las pruebas están diseñadas para cubrir diez casos diferentes del método de cálculo, uno para cada número natural del 1 al 10.
 Así mismo hay un caso de prueba para cada función realizada.
+
+## 6.3 Despliegue
+
+Antes de desplegar la aplicación, es necesario construir los archivos necesarios. Ejecuta el siguiente comando **npm run build**. 
+En este caso la aplicación fue desplegada con vercel.
+
+
